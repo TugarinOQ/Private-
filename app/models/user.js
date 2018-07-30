@@ -10,7 +10,7 @@ let mongoose = require("mongoose"),
             required: true
         },
         cookies: {
-            type: Array,
+            type: String,
             required: true
         },
         token: {

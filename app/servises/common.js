@@ -23,24 +23,14 @@ module.exports = function() {
         } else {
             cbSuccess(user);
         }
-	};
-	
-	self.parseCookie = function(cookies) {
-		let cookie;
-		for (let i = 0; i < cookies.length; i++) {
-			console.log(cookies[i]);			
-		}
-
-
-        return user;
-    }
+    };
 
     self.rebuildUserData = function(userData) {
         let user = {
             id: userData._id,
             username: userData.username,
             token: userData.token,
-            cookies: userData.cookies,
+            // cookies: userData.cookies,
             authDate: userData.authDate
         };
 
